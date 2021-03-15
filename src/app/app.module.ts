@@ -5,11 +5,13 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { BarChartModule } from './shared/bar-chart/bar-chart.module';
+import { LineChartComponent } from './shared/line-chart/line-chart.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     DashboardComponent
+    LineChartComponent,
   ],
   imports: [
     BrowserModule,
