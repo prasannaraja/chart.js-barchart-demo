@@ -9,6 +9,9 @@ import { LineChartComponent } from './shared/line-chart/line-chart.component';
 import { DoughnutComponent } from './shared/doughnut/doughnut.component';
 import { PiechartComponent } from './shared/piechart/piechart.component';
 import { PolarareaComponent } from './shared/polararea/polararea.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatSlideToggleModule } from '@angular/material/slide-toggle';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
@@ -17,14 +20,17 @@ import { PolarareaComponent } from './shared/polararea/polararea.component';
     LineChartComponent,
     DoughnutComponent,
     PiechartComponent,
-    PolarareaComponent
+    PolarareaComponent,
+    HomeComponent,
   ],
   imports: [
     BrowserModule,
     BarChartModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MatSlideToggleModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
